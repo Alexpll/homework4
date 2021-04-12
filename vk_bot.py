@@ -159,10 +159,12 @@ def main():
                             message='Привет! Чем я могу помочь?',
                             chat_id=event.chat_id
                         )
-                elif ('1' in text_message or '2' in text_message or '3' in text_message) and status_db_chat:
-                    if '1' in text_message:
+                elif ('[club203122854|мой бесполезный бот] 1' in text_message or '[club203122854|мой бесполезный бот] 2'\
+                      in text_message or '[club203122854|мой бесполезный бот] 3' in text_message) and status_db_chat:
+                    print(text_message)
+                    if '[club203122854|мой бесполезный бот] 1' in text_message:
                         name = 'завтрак'
-                    elif '2' in text_message:
+                    elif '[club203122854|мой бесполезный бот] 2' in text_message:
                         name = 'обед'
                     else:
                         name = 'ужин'
@@ -180,10 +182,11 @@ def main():
                     lst_recipes = [data_names[number[0]], data_names[number[1]], data_names[number[2]]]
                     status_db_chat = False
                     status_type_chat = True
-                elif ('0' in text_message or '1' in text_message or '2' in text_message) and status_type_chat:
-                    if '0' == text_message:
+                elif ('[club203122854|мой бесполезный бот] 0' in text_message or '[club203122854|мой бесполезный бот] 1'\
+                      in text_message or '[club203122854|мой бесполезный бот] 2' in text_message) and status_type_chat:
+                    if '[club203122854|мой бесполезный бот] 0' == text_message:
                         name_2 = lst_recipes[0]
-                    elif '1' == text_message:
+                    elif '[club203122854|мой бесполезный бот] 1' == text_message:
                         name_2 = lst_recipes[1]
                     else:
                         name_2 = lst_recipes[2]
