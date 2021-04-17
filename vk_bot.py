@@ -229,7 +229,7 @@ def main():
                         dates_chat.append(date.today())
                         id_today_chat.append(event.chat_id)
                         data_3 = list(cursor.execute(f"SELECT * FROM list_recipes").fetchall())
-                        data_new = data_3[random.randint(0, len(data_3))]
+                        data_new = data_3[random.randint(0, len(data_3) - 1)]
                         print(data_new)
                         data_recipes = data_new[3].split(';')
                         data_ingredients = data_new[4].split(';')
