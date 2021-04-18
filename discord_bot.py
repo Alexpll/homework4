@@ -3,7 +3,7 @@ import requests
 import sqlite3
 import random
 
-TOKEN = 'ODMyOTc2ODU0Mzc3NTYyMTIy.YHroJg.KIoxhrcqtARxxhdhs-wr6wSWO5s'
+TOKEN = 'TOKEN'
 client = discord.Client()
 con = sqlite3.connect('recipes.db')
 cursor = con.cursor()

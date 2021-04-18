@@ -9,7 +9,7 @@ from datetime import date
 
 def main():
     vk_session = vk_api.VkApi(
-        token='34491cf0316ee757f8e92728d5e3813d72e5e11effa74e396f42af4f77d21e4f41f077343f5b3f3d2e9e0')
+        token='TOKEN')
     vk = vk_session.get_api()
     status_db = False
     status_db_chat = False
